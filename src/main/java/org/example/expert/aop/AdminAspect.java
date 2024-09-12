@@ -33,6 +33,7 @@ public class AdminAspect {
         Long userId = (Long) req.getAttribute("userId");
         log.info("::: 요청한 사용자의 ID : {}", userId);
 
+
         // API 요청 URL
         String requestURL = req.getRequestURI();
         log.info("::: API 요청 URL : {}", requestURL);
@@ -41,6 +42,7 @@ public class AdminAspect {
         return result;
 
     }
+
 }
 
 
